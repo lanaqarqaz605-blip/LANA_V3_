@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Tajawal:wght@400;500;700&display=swap');
+
+:root {
+  --bg: #0b0b0b;
+  --panel: #171717;
+  --panel2: #202020;
+  --line: #2d2d2d;
+  --gold: #d2b06a;
+  --soft: #ece4d2;
+  --text: #f2f2f2;
+  --muted: #bdb7aa;
+  --danger: #e44343;
+}
+
+/* === إضافات من الكود الأول (موجودة بدون ما تغيّر الأساسي) === */
+body.light-mode {
+  --bg: #f6f1e8;
+  --panel: #ffffff;
+  --panel2: #f4eee2;
+  --line: #ddd4c6;
+  --text: #1f1c18;
+  --muted: #746b5f;
+}
+
+body.light-mode .topbar,
+body.light-mode .nav,
+body.light-mode .top-section,
+body.light-mode .site-footer {
+  background: #fff;
+}
+
+.tool {
+  font-family: "Playfair Display";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.8 "Playfair Display", "Tajawal";
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.topbar,
+.nav,
+.top-section,
+.site-footer {
+  background: #111;
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar {
+  padding: 14px 5%;
+}
+
+.nav {
+  padding: 12px 5%;
+  text-align: center;
+
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-section {
+  padding: 34px 5% 22px;
+}
+
+.wrap,
+.brand,
+.tools,
+.card,
+.footer-grid,
+.cards,
+.booking-layout,
+.review-head {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.wrap,
+.footer-grid {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand,
+.review-head {
+  align-items: center;
+}
+
+.tools {
+  justify-content: flex-end;
+}
+
+.logo {
+  overflow: hidden;
+  background: #111;
+  flex: none;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand h1,
+.section-title,
+.side-titl {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.brand p,
+.top-section p,
+.card-text,
+.note,
+.footer-list a,
+.footer-text,
+.small,
+.price-note {
+  margin: 0;
+  color: var(--muted);
+}
+
+.tool,
+.book-link,
+.submit-btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 700;
+  background: var(--gold);
+  color: #111;
+  display: inline-block;
+}
+
+.nav a {
+  display: inline-block;
+  margin: 4px 12px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.top-section h2 {
+  margin: 0 0 8px;
+  font: 52px/1.1 "Playfair Display", serif;
+  color: var(--soft);
+}
+
+.container {
+  width: min(1140px, 92%);
+  margin: auto;
+  padding: 24px 0;
+}
+
+.box,
+.card,
+.mini-card,
+.faq-item,
+.map-box,
+.side-box {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.box,
+.side-box,
+.faq-item,
+.mini-card .pad {
+  padding: 18px;
+}
+
+.box {
+  margin-bottom: 18px;
+}
+
+.mini-card img {
+  width: 100%;
+  object-fit: cover;
+  background: var(--panel2);
+}
+
+.mini-card img {
+  aspect-ratio: 16 / 10;
+}
+
+.cards .mini-card {
+  flex: 1 1 220px;
+}
+
+.footer-col {
+  flex: 1 1 180px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+/* === قسم البحث (من الكود الأول) === */
+.search-wrap {
+  width: min(1140px, 92%);
+  margin: 18px auto 0;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.search-box input {
+  flex: 1 1 260px;
+  min-width: 220px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: var(--panel2);
+  color: var(--text);
+  font: inherit;
+}
+
+.search-box input:focus {
+  outline: 2px solid rgba(210, 176, 106, 0.35);
+  border-color: var(--gold);
+}
+
+.search-btn,
+.search-clear {
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.search-btn {
+  background: var(--gold);
+  color: #111;
+}
+
+.search-clear {
+  background: var(--panel2);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.search-status {
+  width: 100%;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.search-highlight {
+  background: #ffe08a;
+  color: #111;
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+body.light-mode .search-highlight {
+  background: #f2cc62;
+}
+@media (max-width: 900px) {
+  .card,
+  .card.reverse,
+  .booking-layout,
+  .wrap,
+  .brand,
+  .tools,
+  .footer-grid {
+    display: block;
+  }
+
+  .card-media {
+    min-width: 100%;
+  }
+
+  .top-section h2 {
+    font-size: 38px;
+  }
+
+  .form-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px){
+  .brand-link{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+  }
+
+  .tools{
+    margin-top:12px;
+  }
+
+  .nav{
+    padding: 12px 4%;
+  }
+
+  .nav a{
+    margin: 6px 8px;
+    font-size: 15px;
+  }
+
+  .container{
+    width:min(100%, 94%);
+  }
+}
+
+@media (max-width: 768px){
+  body{
+    font-size:15px;
+  }
+
+  .topbar{
+    padding: 12px 4%;
+  }
+
+  .top-section{
+    padding: 24px 4% 18px;
+  }
+
+  .top-section h2{
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .tools{
+    display:flex !important;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .tool,
+  .book-link,
+  .submit-btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .cards .mini-card,
+  .footer-col,
+  .booking-layout > *,
+  .card,
+  .box,
+  .side-box{
+    width:100%;
+  }
+
+  table{
+    display:block;
+    width:100%;
+    overflow-x:auto;
+  }
+
+  iframe{
+    width:100%;
+  }
+}
+
+@media (max-width: 480px){
+  .logo{
+    width:48px;
+    height:48px;
+  }
+
+  .brand h1{
+    font-size:20px !important;
+  }
+
+  .top-section h2{
+    font-size: 28px;
+  }
+
+  .nav a{
+    display:block;
+    margin:8px 0;
+    padding:8px 0;
+  }
+
+  .container{
+    width:min(100%, 95%);
+    padding:18px 0;
+  }
+
+  .box,
+  .side-box,
+  .faq-item,
+  .mini-card .pad{
+    padding:14px;
+  }
+}

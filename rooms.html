@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الغرف والمرافق</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+.card {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: stretch;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+.card-media {
+  flex: 0 0 34%;
+  min-width: 280px;
+  background: var(--panel2);
+}
+
+.card-media img {
+  width: 100%;
+  object-fit: cover;
+  background: var(--panel2);
+  height: 100%;
+  min-height: 240px;
+}
+
+.card-content {
+  flex: 1 1 400px;
+  padding: 18px 20px;
+}
+
+.card-title {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  color: var(--gold);
+  font-size: 40px;
+  line-height: 1.1;
+  margin-top: 2px;
+}
+
+.card-text {
+  margin: 0;
+  color: var(--muted);
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.latin {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.tag {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 12px;
+  color: var(--muted);
+}
+
+.full-bar {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 700;
+  background: var(--gold);
+  color: #111;
+}
+
+
+  </style>
+</head>
+<body>
+  
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">
+        <img src="img/logo.jpeg" alt="شعار Loving Homes" title="شعار Loving Homes">
+      </div>
+      <div>
+        <h1 style="font-size:24px">Loving Homes</h1>
+      </div>
+    </div>
+    <div class="tools">
+      <button class="tool inc-font">تكبير الخط</button>
+      <button class="tool dec-font">تصغير الخط</button>
+      <button class="tool toggle-mode">الوضع النهاري</button>
+      <button class="tool read-page">قراءة النص</button>
+      <button class="tool stop-read">إيقاف القراءة</button>
+    </div>
+  </div>
+</header>
+
+  <nav class="nav"><a href="index.html">الرئيسية</a><a class="active" href="rooms.html">الغرف والمرافق</a><a href="grooming.html">العناية والمنتجع</a><a href="vet.html">الخدمات البيطرية</a><a href="activities.html">المراعي والأنشطة</a><a href="packages.html">الحزم</a><a href="contact.html">تواصل معنا</a><a href="booking.html">حجز عادي</a><a href="package-booking.html">حجز الحزم</a></nav>
+  <section class="top-section">
+    <p class="small">الرئيسية / الغرف والمرافق</p>
+    <h2>الغرف والمرافق</h2>
+    <p>إقامة مثالية بخيارات متعددة من الغرف الداخلية والمريحة</p>
+  </section>
+  <main class="container">
+    
+<section class="card reverse">
+  <div class="card-media">
+    <img src="img/room3.jpg" alt="الغرفة القياسية" title="الغرفة القياسية">
+  </div>
+  <div class="card-content">
+    <div class="eyebrow">STANDARD ROOM</div>
+    <h3 class="card-title">الغرفة القياسية</h3>
+    <p class="card-text">تعد الغرفة القياسية خيارًا مثاليًا للكلاب التي تحتاج إلى إقامة مريحة وبسعر مناسب، وتتميز بمساحة جيدة تسمح بالاسترخاء والنوم براحة مع سرير مريح وأرضية دافئة.</p>
+    <div class="tags"><span class="tag">خدمة أرضية</span><span class="tag">شاشة تلفزيون</span><span class="tag">سرير مريح</span><span class="tag">خطورة داخلية</span><span class="tag">تنظيف يومي</span></div>
+    <div style="display:inline-block;margin-top:12px;padding:8px 10px;border-radius:10px;background:#111;border:1px solid var(--line);color:var(--gold);font-weight:700;">
+HKD 450</div>
+    <div style="margin-top:14px"><a class="full-bar" href="booking.html">احجز الآن</a></div>
+  </div>
+</section>
+
+<section class="card">
+  <div class="card-media">
+    <img src="img/room1.png" alt="غرفة الماستر" title="غرفة الماستر">
+  </div>
+  <div class="card-content">
+    <div class="eyebrow">MASTER SUITE</div>
+    <h3 class="card-title">غرفة الماستر</h3>
+    <p class="card-text">غرفة الماستر توفر مساحة أكبر وتصميمًا أكثر فخامة، وهي مناسبة للكلاب التي تحتاج مساحة إضافية للحركة أو الإقامة لفترات أطول داخل بيئة هادئة ومريحة.</p>
+    <div class="tags"><span class="tag">خدمة أرضية</span><span class="tag">شاشة تلفزيون</span><span class="tag">ألعاب مخصصة</span><span class="tag">منطقة لعب</span><span class="tag">تقارير يومية</span></div>
+    <div style="display:inline-block;margin-top:12px;padding:8px 10px;border-radius:10px;background:#111;border:1px solid var(--line);color:var(--gold);font-weight:700;">
+HKD 780</div>
+    <div style="margin-top:14px"><a class="full-bar" href="booking.html">احجز الآن</a></div>
+  </div>
+</section>
+
+<section class="card reverse">
+  <div class="card-media">
+    <img src="img/room2.jpg" alt="جناح VIP" title="جناح VIP">
+  </div>
+  <div class="card-content">
+    <div class="eyebrow">VIP SUITE</div>
+    <h3 class="card-title">جناح VIP</h3>
+    <p class="card-text">جناح VIP مخصص لتجربة إقامة أكثر تميزًا مع مساحة كبيرة وخصوصية عالية وخيارات راحة إضافية تناسب الإقامة الخاصة.</p>
+    <div class="tags"><span class="tag">خدمة أرضية</span><span class="tag">غرفة واسعة</span><span class="tag">سرير فاخر</span><span class="tag">ألعاب مخصصة</span><span class="tag">مساحة استرخاء</span></div>
+    <div style="display:inline-block;margin-top:12px;padding:8px 10px;border-radius:10px;background:#111;border:1px solid var(--line);color:var(--gold);font-weight:700;">
+HKD 1200</div>
+    <div style="margin-top:14px"><a class="full-bar" href="booking.html">احجز الآن</a></div>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3 class="side-title">روابط سريعة</h3>
+      <ul class="footer-list">
+        <li><a href="booking.html">احجز الآن</a></li>
+        <li><a href="package-booking.html">حجز الحزم</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="side-title">الحزم</h3>
+      <ul class="footer-list">
+        <li><a href="packages.html">الحزمة المميزة</a></li>
+        <li><a href="packages.html">الحزمة الكلاسيكية</a></li>
+        <li><a href="packages.html">حزمة اليوم</a></li>
+        <li><a href="package-booking.html">الحزمة المخصصة</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="side-title">الخدمات</h3>
+      <ul class="footer-list">
+        <li><a href="rooms.html">الغرف والمرافق</a></li>
+        <li><a href="grooming.html">العناية والمنتجع</a></li>
+        <li><a href="vet.html">الخدمات البيطرية</a></li>
+        <li><a href="activities.html">الأنشطة الخارجية</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="brand">
+        <div class="logo">
+          <img src="img/logo.jpeg" alt="شعار Loving Homes" title="شعار Loving Homes">
+        </div>
+        <div>
+          <h1 style="font-size:22px">Loving Homes</h1>
+          <p class="footer-text">فندق الكلاب الأكثر تميزًا في هونغ كونغ رعاية حقيقية ومحبة على مدار الساعة.</p>
+          <p class="footer-text">Harbour Road, Wan Chai 123</p>
+
+  <a href="https://www.facebook.com/" target="_blank" >f</a>
+  <a href="https://www.instagram.com/" target="_blank" >📷</a>
+  <a href="https://x.com/" target="_blank" >X</a>
+  <a href="https://www.whatsapp.com/" target="_blank" >💬</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:16px; text-align:center; color:var(--muted);">جميع الحقوق محفوظة</div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

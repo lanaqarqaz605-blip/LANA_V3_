@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>المراعي والأنشطة الخارجية</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+.card {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: stretch;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+.card-media {
+  flex: 0 0 34%;
+  min-width: 280px;
+  background: var(--panel2);
+}
+
+.card-media img {
+  width: 100%;
+  object-fit: cover;
+  background: var(--panel2);
+  height: 100%;
+  min-height: 240px;
+}
+
+.card-content {
+  flex: 1 1 400px;
+  padding: 18px 20px;
+}
+
+.card-title {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  color: var(--gold);
+  font-size: 40px;
+  line-height: 1.1;
+  margin-top: 2px;
+}
+
+.card-text {
+  margin: 0;
+  color: var(--muted);
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.latin {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.tag {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 12px;
+  color: var(--muted);
+}
+
+.full-bar {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 700;
+  background: var(--gold);
+  color: #111;
+}
+
+.full-bar.red {
+  background: #250606;
+  color: #ffb6b6;
+  border-color: #803737;
+}
+
+  </style>
+
+</head>
+<body>
+  
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">
+        <img src="img/logo.jpeg" alt="شعار Loving Homes" title="شعار Loving Homes">
+      </div>
+      <div>
+        <h1 style="font-size:24px">Loving Homes</h1>
+      </div>
+    </div>
+    <div class="tools">
+      <button class="tool inc-font">تكبير الخط</button>
+      <button class="tool dec-font">تصغير الخط</button>
+      <button class="tool toggle-mode">الوضع النهاري</button>
+      <button class="tool read-page">قراءة النص</button>
+      <button class="tool stop-read">إيقاف القراءة</button>
+    </div>
+  </div>
+</header>
+
+  <nav class="nav"><a href="index.html">الرئيسية</a><a href="rooms.html">الغرف والمرافق</a><a href="grooming.html">العناية والمنتجع</a><a href="vet.html">الخدمات البيطرية</a><a class="active" href="activities.html">المراعي والأنشطة</a><a href="packages.html">الحزم</a><a href="contact.html">تواصل معنا</a><a href="booking.html">حجز عادي</a><a href="package-booking.html">حجز الحزم</a></nav>
+  <section class="top-section">
+    <p class="small">الرئيسية / المراعي والأنشطة الخارجية</p>
+    <h2>المراعي والأنشطة الخارجية</h2>
+    <p>مغامرات يومية في بيئة آمنة وممتعة</p>
+  </section>
+  <main class="container">
+    
+<section class="card reverse">
+  <div class="card-media">
+    <img src="img/act1.jpg" alt="المراعي الخارجية الآمنة" title="المراعي الخارجية الآمنة">
+  </div>
+  <div class="card-content">
+    <div class="eyebrow">SAFE OUTDOOR MEADOWS</div>
+    <h3 class="card-title">المراعي الخارجية الآمنة</h3>
+    <p class="card-text">توفر المراعي الخارجية مساحة واسعة ومسيجة بالكامل للكلاب للعب والاستكشاف بحرية في بيئة طبيعية وآمنة.</p>
+    <div class="tags"><span class="tag">أرضية طبيعية</span><span class="tag">هواء نقي</span><span class="tag">مساحات تنقل</span><span class="tag">رقابة خارجية</span></div>
+    <div style="display:inline-block;margin-top:12px;padding:8px 10px;border-radius:10px;background:#111;border:1px solid var(--line);color:var(--gold);font-weight:700;">
+HKD 180</div>
+    <div style="margin-top:14px"><a class="full-bar" href="booking.html">احجز الآن</a></div>
+  </div>
+</section>
+
+<section class="card">
+  <div class="card-media">
+    <img src="img/act2.jpg" alt="أنشطة في الغابات" title="أنشطة في الغابات">
+  </div>
+  <div class="card-content">
+    <div class="eyebrow">FOREST WALKING TOURS</div>
+    <h3 class="card-title">أنشطة في الغابات</h3>
+    <p class="card-text">نقدم جولات وأنشطة داخل مسارات طبيعية تضيف تجارب ممتعة للحيوان الأليف مع الحركة والاستكشاف.</p>
+    <div class="tags"><span class="tag">مسارات طبيعية</span><span class="tag">فريق متخصص</span><span class="tag">45-60 دقيقة</span><span class="tag">مجموعات صغيرة</span></div>
+    <div style="display:inline-block;margin-top:12px;padding:8px 10px;border-radius:10px;background:#111;border:1px solid var(--line);color:var(--gold);font-weight:700;">
+HKD 260</div>
+    <div style="margin-top:14px"><a class="full-bar" href="booking.html">احجز الآن</a></div>
+  </div>
+</section>
+
+<section class="card reverse">
+  <div class="card-media">
+    <img src="img/act3.jpg" alt="مساحة العشب الخاصة" title="مساحة العشب الخاصة">
+  </div>
+  <div class="card-content">
+    <div class="eyebrow">PRIVATE GRASS AREA</div>
+    <h3 class="card-title">مساحة العشب الخاصة</h3>
+    <p class="card-text">توفر هذه المنطقة مساحة عشبية مخصصة للكلاب التي تفضل اللعب أو الاسترخاء في بيئة أكثر هدوءًا وخصوصية.</p>
+    <div class="tags"><span class="tag">عشب طبيعي</span><span class="tag">خصوصية عالية</span><span class="tag">ألعاب مخصصة</span><span class="tag">مياه نظيفة</span></div>
+    <div style="display:inline-block;margin-top:12px;padding:8px 10px;border-radius:10px;background:#111;border:1px solid var(--line);color:var(--gold);font-weight:700;">
+HKD 200</div>
+    <div style="margin-top:14px"><a class="full-bar" href="booking.html">احجز الآن</a></div>
+  </div>
+</section>
+
+<section class="card">
+  <div class="card-media">
+    <img src="img/act4.jpg" alt="مسار الرشاقة والتدريب" title="مسار الرشاقة والتدريب">
+  </div>
+  <div class="card-content">
+    <div class="eyebrow">AGILITY & TRAINING TRACK</div>
+    <h3 class="card-title">مسار الرشاقة والتدريب</h3>
+    <p class="card-text">تم تصميم هذا المسار لدعم التمارين البسيطة وتحفيز الحركة والانتباه ضمن جلسات تدريب ممتعة.</p>
+    <div class="tags"><span class="tag">حواجز مرنة</span><span class="tag">لعب</span><span class="tag">تمرين تفاعل</span><span class="tag">مسار متخصص</span></div>
+    <div style="display:inline-block;margin-top:12px;padding:8px 10px;border-radius:10px;background:#111;border:1px solid var(--line);color:var(--gold);font-weight:700;">
+>HKD 240</div>
+    <div style="margin-top:14px"><a class="full-bar" href="booking.html">احجز الآن</a></div>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3 class="side-title">روابط سريعة</h3>
+      <ul class="footer-list">
+        <li><a href="booking.html">احجز الآن</a></li>
+        <li><a href="package-booking.html">حجز الحزم</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="side-title">الحزم</h3>
+      <ul class="footer-list">
+        <li><a href="packages.html">الحزمة المميزة</a></li>
+        <li><a href="packages.html">الحزمة الكلاسيكية</a></li>
+        <li><a href="packages.html">حزمة اليوم</a></li>
+        <li><a href="package-booking.html">الحزمة المخصصة</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="side-title">الخدمات</h3>
+      <ul class="footer-list">
+        <li><a href="rooms.html">الغرف والمرافق</a></li>
+        <li><a href="grooming.html">العناية والمنتجع</a></li>
+        <li><a href="vet.html">الخدمات البيطرية</a></li>
+        <li><a href="activities.html">الأنشطة الخارجية</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="brand">
+        <div class="logo">
+          <img src="img/logo.jpeg" alt="شعار Loving Homes" title="شعار Loving Homes">
+        </div>
+        <div>
+          <h1 style="font-size:22px">Loving Homes</h1>
+          <p class="footer-text">فندق الكلاب الأكثر تميزًا في هونغ كونغ رعاية حقيقية ومحبة على مدار الساعة.</p>
+          <p class="footer-text">Harbour Road, Wan Chai 123</p>
+
+  <a href="https://www.facebook.com/" target="_blank" >f</a>
+  <a href="https://www.instagram.com/" target="_blank" >📷</a>
+  <a href="https://x.com/" target="_blank" >X</a>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:16px; text-align:center; color:var(--muted);">جميع الحقوق محفوظة</div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

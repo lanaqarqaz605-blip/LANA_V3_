@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تفاصيل الحجز</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .booking-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.booking-layout .main-form {
+  flex: 1;
+}
+
+.booking-layout .summary {
+  width: 260px;
+  flex: none;
+  }
+  .summary {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+}
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.option-card {
+  flex: 1 1 180px;}
+.option-card strong {
+  display: block;
+  color: var(--gold);
+  margin-bottom: 4px;}
+
+  </style>
+</head>
+<body>
+  
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">
+        <img src="img/logo.jpeg" alt="شعار Loving Homes" title="شعار Loving Homes">
+      </div>
+      <div>
+        <h1 style="font-size:24px">Loving Homes</h1>
+      </div>
+    </div>
+    <div class="tools">
+      <button class="tool inc-font">تكبير الخط</button>
+      <button class="tool dec-font">تصغير الخط</button>
+      <button class="tool toggle-mode">الوضع النهاري</button>
+      <button class="tool read-page">قراءة النص</button>
+      <button class="tool stop-read">إيقاف القراءة</button>
+    </div>
+  </div>
+</header>
+
+  <nav class="nav"><a href="index.html">الرئيسية</a><a href="rooms.html">الغرف والمرافق</a><a href="grooming.html">العناية والمنتجع</a><a href="vet.html">الخدمات البيطرية</a><a href="activities.html">المراعي والأنشطة</a><a href="packages.html">الحزم</a><a href="contact.html">تواصل معنا</a><a href="booking.html">حجز عادي</a><a href="package-booking.html">حجز الحزم</a></nav>
+  <section class="top-section">
+    <p class="small">الرئيسية / تفاصيل الحجز</p>
+    <h2>تفاصيل الحجز</h2>
+    <p>اختر خدماتك وأكمل بياناتك وسنستقبل طلبك</p>
+  </section>
+  <main class="container">
+    
+<section class="booking-layout">
+  <div class="main-form">
+    <div class="box">
+      <h3 class="section-title">تفاصيل الحجز</h3>
+      <form id="booking-form">
+        <div class="form-grid">
+          <label>الاسم الكامل<input  style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;"
+             type="text" required>
+          
+          </label>
+          <label>رقم الهاتف<input  style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;"
+            type="tel" 
+            required>
+          </label>
+          <label>البريد الإلكتروني<input style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;"
+            type="email"></label>
+          <label>اسم الحيوان<input  style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;"
+             type="text" required></label>
+          <label>العمر<input  style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;"
+             type="number" min="1" required></label>
+          <label>الوزن<input style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;"
+            required></label>
+          <label>تاريخ الوصول<input  style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;"
+            type="date" required></label>
+          <label>تاريخ المغادرة<input type="text" style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;"
+             type="date" required></label>
+        </div>
+        <div class="box" style="margin-top:16px">
+          <h3 class="section-title" style="font-size:28px">اختر الغرفة</h3>
+          <label><input type="radio" name="room" required> الغرفة القياسية — HKD 450</label>
+          <label><input type="radio" name="room" required> غرفة الماستر — HKD 780</label>
+          <label><input type="radio" name="room" required> جناح VIP — HKD 1200</label>
+        </div>
+        <div class="box" style="margin-top:16px">
+          <h3 class="section-title" style="font-size:28px">العناية والمنتجع (اختياري)</h3>
+          <div class="option-grid">
+            <div class="option-card"><strong>الحلاقة والعناية الأساسية</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option><option>3</option></select></div>
+            <div class="option-card"><strong>التنظيف العميق والمساج</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option><option>3</option></select></div>
+            <div class="option-card"><strong>تجربة السبا الفاخرة</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option><option>3</option></select></div>
+          </div>
+        </div>
+        <div class="box" style="margin-top:16px">
+          <h3 class="section-title" style="font-size:28px">الخدمات البيطرية (اختياري)</h3>
+          <div class="option-grid">
+            <div class="option-card"><strong>الفحص الصحي الشامل</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option></select></div>
+            <div class="option-card"><strong>خدمات التطعيم</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option></select></div>
+            <div class="option-card"><strong>الرعاية الطبية الطارئة</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option></select></div>
+            <div class="option-card"><strong>استشارة بيطرية وتقييم صحي</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option></select></div>
+          </div>
+        </div>
+        <div class="box" style="margin-top:16px">
+          <h3 class="section-title" style="font-size:28px">المراعي والأنشطة (اختياري)</h3>
+          <div class="option-grid">
+            <div class="option-card"><strong>المراعي الخارجية الآمنة</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option><option>3</option></select></div>
+            <div class="option-card"><strong>أنشطة في الغابات</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option><option>3</option></select></div>
+            <div class="option-card"><strong>مساحة العشب الخاصة</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option><option>3</option></select></div>
+            <div class="option-card"><strong>مسار الرشاقة والتدريب</strong><select style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;">
+              <option value="0">0</option><option>1</option><option>2</option><option>3</option></select></div>
+          </div>
+        </div>
+        <label>ملاحظات إضافية<textarea style="width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font:inherit;min-height:120px;resize:vertical;"></textarea>
+        <button class="submit-btn" type="submit">تأكيد الحجز</button>
+      </form>
+    </div>
+  </div>
+  <aside class="summary">
+    <h3 class="side-title">ملخص الحجز</h3>
+    <div class="summary-list">
+      <div class="side-box"><strong>الغرف</strong><br><span class="price-note">قياسية / ماستر / VIP</span></div>
+      <div class="side-box"><strong>العناية</strong><br><span class="price-note">220 / 380 / 520</span></div>
+      <div class="side-box"><strong>البيطري</strong><br><span class="price-note">300 / 420 / 650 / 250</span></div>
+      <div class="side-box"><strong>الأنشطة</strong><br><span class="price-note">180 / 260 / 200 / 240</span></div>
+    </div>
+  </aside>
+</section>
+
+  </main>
+  
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3 class="side-title">روابط سريعة</h3>
+      <ul class="footer-list">
+        <li><a href="booking.html">احجز الآن</a></li>
+        <li><a href="package-booking.html">حجز الحزم</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="side-title">الحزم</h3>
+      <ul class="footer-list">
+        <li><a href="packages.html">الحزمة المميزة</a></li>
+        <li><a href="packages.html">الحزمة الكلاسيكية</a></li>
+        <li><a href="packages.html">حزمة اليوم</a></li>
+        <li><a href="package-booking.html">الحزمة المخصصة</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="side-title">الخدمات</h3>
+      <ul class="footer-list">
+        <li><a href="rooms.html">الغرف والمرافق</a></li>
+        <li><a href="grooming.html">العناية والمنتجع</a></li>
+        <li><a href="vet.html">الخدمات البيطرية</a></li>
+        <li><a href="activities.html">الأنشطة الخارجية</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="brand">
+        <div class="logo">
+          <img src="img/logo.jpeg" alt="شعار Loving Homes" title="شعار Loving Homes">
+        </div>
+        <div>
+          <h1 style="font-size:22px">Loving Homes</h1>
+          <p class="footer-text">فندق الكلاب الأكثر تميزًا في هونغ كونغ رعاية حقيقية ومحبة على مدار الساعة.</p>
+          <p class="footer-text">Harbour Road, Wan Chai 123</p>
+
+  <a href="https://www.facebook.com/" target="_blank" >f</a>
+  <a href="https://www.instagram.com/" target="_blank" >📷</a>
+  <a href="https://x.com/" target="_blank" >X</a>
+  <a href="https://www.whatsapp.com/" target="_blank" >💬</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:16px; text-align:center; color:var(--muted);">جميع الحقوق محفوظة</div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
